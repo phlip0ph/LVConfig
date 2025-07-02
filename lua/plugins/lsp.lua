@@ -49,6 +49,9 @@ return {
       servers = {
         volar = {},
         tailwindcss = {},
+        pyright = {
+          mason = false,
+        },
       },
     },
   },

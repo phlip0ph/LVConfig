@@ -1,80 +1,80 @@
--- vim.cmd.colorscheme("flexoki")
-
--- require("catppuccin").setup({
---   flavour = "mocha", -- latte, frappe, macchiato, mocha
---   color_overrides = {
---     mocha = {
---       rosewater = "#EA6962",
---       flamingo = "#EA6962",
---       pink = "#D3869B",
---       mauve = "#D3869B",
---       red = "#EA6962",
---       maroon = "#EA6962",
---       peach = "#BD6F3E",
---       yellow = "#D8A657",
---       green = "#A9B665",
---       teal = "#89B482",
---       sky = "#89B482",
---       sapphire = "#89B482",
---       blue = "#7DAEA3",
---       lavender = "#7DAEA3",
---       text = "#D4BE98",
---       subtext1 = "#BDAE8B",
---       subtext0 = "#A69372",
---       overlay2 = "#8C7A58",
---       overlay1 = "#735F3F",
---       overlay0 = "#5A4525",
---       surface2 = "#4B4F51",
---       surface1 = "#2A2D2E",
---       surface0 = "#232728",
---       base = "#1D2021",
---       mantle = "#191C1D",
---       crust = "#151819",
---     },
+-- require("rose-pine").setup({
+--   variant = "moon", -- auto, main, moon, or dawn
+--   dark_variant = "moon", -- main, moon, or dawn
+--   dim_inactive_windows = false,
+--   extend_background_behind_borders = true,
+--
+--   enable = {
+--     terminal = true,
+--     legacy_highlights = true, -- Improve compatibility for previous versions of Neovim
+--     migrations = true, -- Handle deprecated options automatically
 --   },
+--
 --   styles = {
---     comments = { "italic" },
---     conditionals = { "italic" },
---     loops = { "bold" },
---     functions = { "bold" },
---     keywords = { "bold" },
---     strings = {},
---     variables = {},
---     numbers = { "bold" },
---     booleans = { "bold" },
---     properties = {},
---     types = { "bold" },
---     operators = {},
+--     bold = true,
+--     italic = true,
+--     transparency = false,
 --   },
---   transparent_background = false,
---   show_end_of_buffer = false,
---   custom_highlights = function(colors)
---     return {
---       NormalFloat = { bg = colors.crust },
---       FloatBorder = { bg = colors.crust, fg = colors.crust },
---       VertSplit = { bg = colors.base, fg = colors.surface0 },
---       CursorLineNr = { fg = colors.mauve, style = { "bold" } },
---       Pmenu = { bg = colors.crust, fg = "" },
---       PmenuSel = { bg = colors.surface0, fg = "" },
---       TelescopeSelection = { bg = colors.surface0 },
---       TelescopePromptCounter = { fg = colors.mauve, style = { "bold" } },
---       TelescopePromptPrefix = { bg = colors.surface0 },
---       TelescopePromptNormal = { bg = colors.surface0 },
---       TelescopeResultsNormal = { bg = colors.mantle },
---       TelescopePreviewNormal = { bg = colors.crust },
---       TelescopePromptBorder = { bg = colors.surface0, fg = colors.surface0 },
---       TelescopeResultsBorder = { bg = colors.mantle, fg = colors.mantle },
---       TelescopePreviewBorder = { bg = colors.crust, fg = colors.crust },
---       TelescopePromptTitle = { fg = colors.surface0, bg = colors.surface0 },
---       TelescopeResultsTitle = { fg = colors.mantle, bg = colors.mantle },
---       TelescopePreviewTitle = { fg = colors.crust, bg = colors.crust },
---       IndentBlanklineChar = { fg = colors.surface0 },
---       IndentBlanklineContextChar = { fg = colors.surface2 },
---       GitSignsChange = { fg = colors.peach },
---       NvimTreeIndentMarker = { link = "IndentBlanklineChar" },
---       NvimTreeExecFile = { fg = colors.text },
---     }
+--
+--   groups = {
+--     border = "muted",
+--     link = "iris",
+--     panel = "surface",
+--
+--     error = "love",
+--     hint = "iris",
+--     info = "foam",
+--     note = "pine",
+--     todo = "rose",
+--     warn = "gold",
+--
+--     git_add = "foam",
+--     git_change = "rose",
+--     git_delete = "love",
+--     git_dirty = "rose",
+--     git_ignore = "muted",
+--     git_merge = "iris",
+--     git_rename = "pine",
+--     git_stage = "iris",
+--     git_text = "rose",
+--     git_untracked = "subtle",
+--
+--     h1 = "iris",
+--     h2 = "foam",
+--     h3 = "rose",
+--     h4 = "gold",
+--     h5 = "pine",
+--     h6 = "foam",
+--   },
+--
+--   palette = {
+--     -- Override the builtin palette per variant
+--     -- moon = {
+--     --     base = '#18191a',
+--     --     overlay = '#363738',
+--     -- },
+--   },
+--
+--   -- NOTE: Highlight groups are extended (merged) by default. Disable this
+--   -- per group via `inherit = false`
+--   highlight_groups = {
+--     -- Comment = { fg = "foam" },
+--     -- StatusLine = { fg = "love", bg = "love", blend = 15 },
+--     -- VertSplit = { fg = "muted", bg = "muted" },
+--     -- Visual = { fg = "base", bg = "text", inherit = false },
+--   },
+--
+--   before_highlight = function(group, highlight, palette)
+--     -- Disable all undercurls
+--     -- if highlight.undercurl then
+--     --     highlight.undercurl = false
+--     -- end
+--     --
+--     -- Change palette colour
+--     -- if highlight.fg == palette.pine then
+--     --     highlight.fg = palette.foam
+--     -- end
 --   end,
 -- })
--- -- setup must be called before loading
--- vim.cmd.colorscheme("catppuccin")
+--
+-- vim.cmd("colorscheme rose-pine")
