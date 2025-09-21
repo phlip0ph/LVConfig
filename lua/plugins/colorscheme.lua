@@ -23,7 +23,7 @@ return {
   },
   -- Futher customization of colorscheme
   {
-    "catppuccing/nvim",
+    "catppuccin/nvim",
     name = "catppuccin",
     opts = {
       flavour = "macchiato",
