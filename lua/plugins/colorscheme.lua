@@ -9,12 +9,31 @@ return {
   { "sainnhe/sonokai", name = "sonokai", lazy = false },
   { "rose-pine/neovim", name = "rose-pine" },
   { "vague2k/vague.nvim", name = "vague" },
+  { "catppuccin/nvim", name = "catppuccin" },
 
   -- Configure LazyVim to load colorscheme
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "vague",
+      -- colorscheme = "catppuccin-latte",
+      colorscheme = function()
+        require("catppuccin").load()
+      end,
+    },
+  },
+  -- Futher customization of colorscheme
+  {
+    "catppuccing/nvim",
+    name = "catppuccin",
+    opts = {
+      flavour = "macchiato",
+      color_overrides = {
+        macchiato = {
+          base = "#000000",
+          mantle = "#000000",
+          crust = "#000000",
+        },
+      },
     },
   },
 }
