@@ -15,25 +15,25 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      -- colorscheme = "catppuccin-latte",
-      colorscheme = function()
-        require("catppuccin").load()
-      end,
+      colorscheme = "vague",
+      -- colorscheme = function()
+      --   require("catppuccin").load()
+      -- end,
     },
   },
   -- Futher customization of colorscheme
-  {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    opts = {
-      flavour = "macchiato",
-      color_overrides = {
-        macchiato = {
-          base = "#000000",
-          mantle = "#000000",
-          crust = "#000000",
-        },
-      },
-    },
-  },
+  -- {
+  --   "catppuccin/nvim",
+  --   name = "catppuccin",
+  --   opts = {
+  --     flavour = "macchiato",
+  --     color_overrides = {
+  --       macchiato = {
+  --         base = "#000000",
+  --         mantle = "#000000",
+  --         crust = "#000000",
+  --       },
+  --     },
+  --   },
+  -- },
 }
