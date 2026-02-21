@@ -1,0 +1,4 @@
+-- TODO: Get the current file path
+-- TODO: Break it down to the right path (everything after phrends)
+-- TODO: Cutoff file extensions
+-- TODO: Prepend localhost:4321
