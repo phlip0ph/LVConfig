@@ -4,4 +4,5 @@ if vim.g.vscode then
 else
   require("config.lazy")
   require("config.colorscheme")
+  require("functions.openPhrends")
 end
